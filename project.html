@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">  
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  height: 70px;
+}
+button {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50; /* Green */
+}
+</style>
+    <title>project</title>
+</head>
+<body>
+    <h1>My first project</h1>
+    <button type="button" onclick="load()"><b>CLICK ON ME FOR SHOW CONTENT</b></button>
+   
+
+    <table>
+
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Class</th>
+          <th>Seat</th>
+          <th>Club</th>
+          <th>ScheduleDestination</th>
+          <th>ScheduleAction</th>
+          <th>ScheduleTime</th>
+        </tr>
+        <tr>
+          <td id="id"></td>
+          <td id="nam"></td>
+          <td id="gender"></td>
+          <td id="clas"></td>
+          <td id="seat"></td>
+          <td id="club"></td>
+          <td id="sd"></td>
+          <td id="sa"></td>
+          <td id="st"></td>
+        </tr>
+      </table>
+</body>
+
+</html>
